@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="result">Result</h1>
+    <script>
+        // let firstValue = +prompt("enter value 1");
+        // let operator = prompt("enter your operator");
+        // let secondValue = +prompt("enter value 2");
+        
+        //     if(operator === '+')
+        //         console.log(firstValue + secondValue)
+                
+            
+        //     else if
+        //     (operator === '-')
+    
+        //         console.log(firstValue - secondValue)
+                
+            
+        //     else if
+        //     (operator === '*')
+        //             console.log(firstValue * secondValue)
+                
+            
+        //     else if
+        //     (operator === '/')
+                
+        //             console.log(firstValue / secondValue)
+        
+        //     else
+        //         console.log('not an operator')
+
+        let result = document.getElementById('#result');
+        let guessed;
+        const name = prompt("What's your name?");
+        let random = Math.floor(Math.random() * 100) + 1;
+        let usersNumber;
+        do {usersNumber = prompt("Type in your number between 0 and 100")
+            if(usersNumber > random){
+            console.log('You guessed it higher');
+            guessed = false;
+        }else if(usersNumber < random){
+            console.log('You guessed is lower');
+            guessed = false;
+        } else {
+            console.log(`Congrats '${name}'! You have won!`);
+            guessed = true;
+        }
+    }
+
+      while (guessed = false)
+    </script>
+</body>
+</html>
